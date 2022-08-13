@@ -42,3 +42,8 @@ jobs:
           username: santhoshkumar8888
           password: Santhu@1143
 
+    - name : publish image to Docker Hub
+      run : docker push         
+
+
+
