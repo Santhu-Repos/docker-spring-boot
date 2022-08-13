@@ -32,17 +32,22 @@ jobs:
 
     - name: Build with Maven
       run:  mvn clean install package --file pom.xml
-   
-    - name: Build the Docker image.
-      run: docker build . --file Dockerfile --tag springbootdockerapp
-   
-    - name: Log in to Docker Hub
-      uses: docker/login-action@v2
-      with:
+
+     - name: Log in to Docker Hub
+       uses: docker/login-action@v2
+       with:
           username: santhoshkumar8888
           password: Santhu@1143
+   
+     - name: Build the Docker image.
+       run: docker build . --file Dockerfile -t springbootapp
+    
+     - name: docker tag
+       run: docker image tag springbootapp santhoshkumar8888/springbootdockerapp
 
-    - name : publish image to Docker Hub
-      run : docker push santhoshkumar8888/springbootdockerapp:springbootdockerapp 
+     - name: docker publish 
+       run: docker image push santhoshkumar8888/springbootdockerapp
+   
 
+  
 
