@@ -39,6 +39,6 @@ jobs:
     - name: Log in to Docker Hub
       uses: docker/login-action@v2
         with:
-          username: santhoshkumarb8888@gmail.com
+          username: santhoshkumar8888
           password: Santhu@1143
 
