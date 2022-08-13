@@ -43,7 +43,6 @@ jobs:
           password: Santhu@1143
 
     - name : publish image to Docker Hub
-      run : docker push santhoshkumar8888/springbootdockerapp
-
+      run : docker push santhoshkumar8888/springbootdockerapp:latest 
 
 
