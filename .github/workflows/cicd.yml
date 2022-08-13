@@ -34,7 +34,7 @@ jobs:
       run:  mvn clean install package --file pom.xml
    
     - name: Build the Docker image.
-      run: docker build . --file Dockerfile --tag springbootapp
+      run: docker build . --file Dockerfile --tag springbootdockerapp
    
     - name: Log in to Docker Hub
       uses: docker/login-action@v2
