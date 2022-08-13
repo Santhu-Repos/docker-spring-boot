@@ -35,3 +35,11 @@ jobs:
    
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+
+     -  name: Log into registry 
+        uses: docker/login-action@28218f9b04b4f3f62068d7b6ce6ca5b26e35336c
+        with:
+          username: santhoshkumarb8888@gmail.com
+          password: Santhu@1143
+
+
