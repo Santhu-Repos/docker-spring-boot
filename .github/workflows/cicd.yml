@@ -33,7 +33,7 @@ jobs:
     - name: Build with Maven
       run:  mvn clean install package --file pom.xml
    
-    - name: Build the Docker image
+    - name: Build the Docker image.
       run: docker build . --file Dockerfile --tag springbootapp1.0
    
     - name: Log in to Docker Hub
