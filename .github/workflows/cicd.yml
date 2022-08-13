@@ -32,7 +32,6 @@ jobs:
 
     - name: Build with Maven
       run:  mvn clean install package --file pom.xml
-
-     - name: Docker build
-      run: |
-        docker build . 
+   
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
