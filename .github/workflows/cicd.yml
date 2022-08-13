@@ -20,7 +20,7 @@ jobs:
 
     steps:
 
-    - name: code check-out 
+    - name: code check out 
       uses: actions/checkout@v3
     
     - name: Set up JDK 11
@@ -34,4 +34,4 @@ jobs:
       run:  mvn clean install package --file pom.xml
 
      - name : build docker file 
-       run  :  docker build . -t springbootDockerApplication  
+       run  :  docker build -t springbootDockerApplication . 
