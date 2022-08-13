@@ -18,9 +18,8 @@ jobs:
     # This job will be run on ubuntu machine runner
    runs-on: ubuntu-latest
 
-    steps:
-
-    - name: code check-out 
+   steps:
+     - name: code check-out 
       uses: actions/checkout@v3
     
     - name: Set up JDK 11
