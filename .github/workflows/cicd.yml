@@ -39,7 +39,7 @@ jobs:
         password: Santhu@1143
    
    - name: Build the Docker image.
-     run: docker build . --file Dockerfile
+     run: docker build . --file Dockerfile -t springbootapp
     
    - name: docker tag
      run: docker image tag springbootapp santhoshkumar8888/springbootdockerapp
