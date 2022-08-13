@@ -33,5 +33,6 @@ jobs:
     - name: Build with Maven
       run:  mvn clean install package --file pom.xml
 
-     - name : build docker file 
-       run  :  docker build . 
+     - name: Docker build
+      run: |
+        docker build . 
