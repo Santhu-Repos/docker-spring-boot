@@ -16,7 +16,7 @@ jobs:
   build:
 
     # This job will be run on ubuntu machine runner
-    runs-on: ubuntu-latest
+   runs-on: ubuntu-latest
 
     steps:
 
@@ -40,7 +40,7 @@ jobs:
         password: Santhu@1143
    
      - name: Build the Docker image.
-       run: docker build . --file Dockerfile -t springbootapp
+       run: docker build . --file Dockerfile
     
      - name: docker tag
        run: docker image tag springbootapp santhoshkumar8888/springbootdockerapp
