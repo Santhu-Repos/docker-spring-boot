@@ -36,8 +36,8 @@ jobs:
      - name: Log in to Docker Hub
        uses: docker/login-action@v2
        with:
-          username: santhoshkumar8888
-          password: Santhu@1143
+        username: santhoshkumar8888
+        password: Santhu@1143
    
      - name: Build the Docker image.
        run: docker build . --file Dockerfile -t springbootapp
