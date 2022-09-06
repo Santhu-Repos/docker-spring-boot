@@ -1,0 +1,13 @@
+name: Test2
+on:
+  workflow_run:
+    workflows: ["Test1"]
+    types:
+      - completed
+jobs:
+  Sample-Notofy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      
+      - run: echo "🍏 This job's status is ${{ job.status }}."
