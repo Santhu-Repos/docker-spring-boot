@@ -2,6 +2,8 @@ name: Test2
 on:
   workflow_run:
     workflows: ["Test1"]
+    branches: 
+      -Testing
     types:
       - completed
 jobs:
